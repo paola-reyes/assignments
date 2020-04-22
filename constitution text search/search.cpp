@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------- 
-  Program 4: Two Codes
+  Program 4: Constitution Search
   
   Class: CS 141, Spring 2020.  Tues 1pm lab
   System: Zybooks
