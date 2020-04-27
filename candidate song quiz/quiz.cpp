@@ -1,4 +1,4 @@
-/* -------------------------------------------------------- 
+/* --------------------------------------------------------
   Class: Program #2 for CS 141, Fall 2019
   Lab: Tues 10am
   TA Aditi
@@ -32,30 +32,29 @@ bool isValidLyric( string line ) {
 
 
 //----------------------------------------------------------------------------------------------
-// Retrive one random valid line from a given candidate's file 
-void getRandomLine( string candidateName ) {  
+// Retrive one random valid line from a given candidate's file
+void getRandomLine( string candidateName ) {
     ifstream inputFileStream;        // Declare the input file stream
-    
     // Open input file and verify that file was found
     inputFileStream.open( candidateName.c_str() );
     if( !inputFileStream.is_open()) {
         cout << "Could not find input file " << candidateName << "  Exiting..." << endl;
         exit( -1);
     }
-    
+
     // Read the number on the first line of the input file, which indicates how many subsequent
     // lines there are in the file.
     int numberOfLinesInFile = 0;
-    inputFileStream >> numberOfLinesInFile;   
+    inputFileStream >> numberOfLinesInFile;
     int lineNumber = rand()%numberOfLinesInFile;
-    
+
     // Read one line at a time, repeating until we get to the designated line.  If the designated
     // line is blank or is a comment line starting with '#', then skip it and go on to the next.
     string line;
     int currentLine = 1;
     while( getline(inputFileStream, line) ) {
         if( currentLine == lineNumber ) {
-            if ( isValidLyric(line) ) {       
+            if ( isValidLyric(line) ) {
                 cout << line << endl;
             }
             else {
@@ -65,14 +64,14 @@ void getRandomLine( string candidateName ) {
 
         currentLine ++;
     } //end while( getLine...
-    
+
     inputFileStream.close();    // Close the input file.
 }
 
 
 //----------------------------------------------------------------------------------------------
-// Gets a new random line some number of times based on the user's numLinesToDisplay input 
-void getMultipleLines( string candidateName, int numLinesToDisplay ) {    
+// Gets a new random line some number of times based on the user's numLinesToDisplay input
+void getMultipleLines( string candidateName, int numLinesToDisplay ) {
     for (int i = 0; i < numLinesToDisplay; i++) {
         getRandomLine(candidateName);
     }
@@ -92,16 +91,16 @@ int percentage(double numCorrect, double totalAttempts) {
 
 
 //----------------------------------------------------------------------------------------------
-int main() {   
+int main() {
     srand(1);     // set up for rand()
-    
+
     // Count total number of times user opened the quiz in Option #4. Also tracks the number of
     // examples the user guessed correctly
     double numCorrect = 0;
     double totalAttempts = 0;
-    
+
     int numLinesToDisplay = 3;  // How many lines of lyrics program should display. Initially 3 but user can change value
-    int userChoice;    // User main menu option input 
+    int userChoice;    // User main menu option input
     int userGuess;     // User answer input for the quiz problems in Option #4
 
 	// Display which program this is and display menu options to select program output to be displayed
@@ -125,21 +124,21 @@ int main() {
                 cout << "Enter the number of lines you want to display -> ";
                 cin >> numLinesToDisplay;
                 break;
-            // User input of 2 displays some number lyrics lines from "Trump.txt" 
+            // User input of 2 displays some number lyrics lines from "Trump.txt"
             case 2:
                 getMultipleLines("Trump.txt", numLinesToDisplay);
                 break;
-            // User input of 3 displays some number lyrics lines from "Warren.txt" 
+            // User input of 3 displays some number lyrics lines from "Warren.txt"
             case 3:
                 getMultipleLines("Warren.txt", numLinesToDisplay);
                 break;
-            // User input of 4 chooses a random candidate and displays some number of lyric lines. 
+            // User input of 4 chooses a random candidate and displays some number of lyric lines.
             // The user will be asked to guess which candidate that song
             case 4:
                 totalAttempts += 1;                // update totalAttempts everytime Option #4 is run
                 int randomCandidate = rand() % 2;  // choose a random number 0 (Trump) or 1 (Warren) for a random candidate
                 string correctAnswer;
-            
+
                 // Based on the random candidate, display some number of lines from their file
                 // The chosen candidate's name is the correct answer for the quiz problem
                 if (randomCandidate == 0) {
@@ -150,26 +149,26 @@ int main() {
                     getMultipleLines("Warren.txt", numLinesToDisplay);
                     correctAnswer = "Warren";
                 }
-                
+
                 // Display guess options and ask for user's guess input
                 cout << endl << "Enter 1 for Trump, 2 for Warren: ";
                 cin >> userGuess;
-                
+
                 // Check if user's guess is correct and display a "Correct!" statement with their updated score
                 if ( (userGuess == 1 && correctAnswer == "Trump") || (userGuess == 2 && correctAnswer == "Warren") ) {
                     numCorrect += 1;
-                    cout << endl 
-                         <<"Correct! You got " << numCorrect << " out of " << totalAttempts 
-                         << ", which is " << percentage(numCorrect, totalAttempts) << "%" 
+                    cout << endl
+                         <<"Correct! You got " << numCorrect << " out of " << totalAttempts
+                         << ", which is " << percentage(numCorrect, totalAttempts) << "%"
                          << endl;
                 }
                 // If user's guess is wrong and display a "Wrong!" statement and their updated score
                 else {
-                    cout << endl 
-                         <<"Wrong! You got " << numCorrect << " out of " << totalAttempts 
-                         << ", which is " << percentage(numCorrect, totalAttempts) << "%" 
+                    cout << endl
+                         <<"Wrong! You got " << numCorrect << " out of " << totalAttempts
+                         << ", which is " << percentage(numCorrect, totalAttempts) << "%"
                          << endl;
-                }  
+                }
                 break;
         } //end of switch statement
 
@@ -187,11 +186,11 @@ int main() {
         cin >> userChoice;
         cout << endl;
     } // end of while loop
-        
+
     // User input of 5 prints out final score and ends program
     if (userChoice == 5) {
-        cout << "You got " << numCorrect << " out of " << totalAttempts 
-             << ", which is " << percentage(numCorrect, totalAttempts) << "%" 
+        cout << "You got " << numCorrect << " out of " << totalAttempts
+             << ", which is " << percentage(numCorrect, totalAttempts) << "%"
              << endl;
         exit(-1);
     }
