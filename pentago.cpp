@@ -4,6 +4,52 @@
   Class: CS 141, Spring 2020.  Tues 1pm lab
   System: Zybooks
   Author: Paola Reyes
+  
+Test input:
+  To enter the input all at one time, for the run below use:
+     c31r  A5 3R  G05h  c05h  c25h  c21h  c2 1r  b 6 4 l  c53l  d6 3r  c41r  e14l  c6 2r  f2 3l
+
+  To have both win at same time, resulting in a tie, use:
+     b23r a53l b13l b63l b33l d63l e24l e12r e31r f23l
+
+Running the program looks like what is shown below.
+  Welcome to Pentago, where you try to get 5 of your pieces in a line.
+  At any point enter 'x' to exit or 'i' for instructions.
+
+      1   2   3   4   5   6
+    1-----------------------2
+  A | .   .   . | .   .   . | A
+    |           |           |
+  B | .   .   . | .   .   . | B
+    |           |           |
+  C | .   .   . | .   .   . | C
+    |-----------+-----------|
+  D | .   .   . | .   .   . | D
+    |           |           |
+  E | .   .   . | .   .   . | E
+    |           |           |
+  F | .   .   . | .   .   . | F
+    3-----------------------4
+      1   2   3   4   5   6
+  1. Enter row, column, quadrant, direction for X: a11r
+
+      1   2   3   4   5   6
+    1-----------------------2
+  A | .   .   X | .   .   . | A
+    |           |           |
+  B | .   .   . | .   .   . | B
+    |           |           |
+  C | .   .   . | .   .   . | C
+    |-----------+-----------|
+  D | .   .   . | .   .   . | D
+    |           |           |
+  E | .   .   . | .   .   . | E
+    |           |           |
+  F | .   .   . | .   .   . | F
+    3-----------------------4
+      1   2   3   4   5   6
+  2. Enter row, column, quadrant, direction for O: x
+  Exiting program...
 ----------------------------------------------------------- */
 #include <iostream>  // Needed to avoid compiler error for the exit() command
 #include <cctype>    // For toupper()
