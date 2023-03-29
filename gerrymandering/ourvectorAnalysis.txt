@@ -1,0 +1,45 @@
+*********************************************************
+ourvector<b> stats:
+ # of vectors created:   1
+ # of elements inserted: 2
+ # of elements accessed: 15
+*********************************************************
+This is the dataLoaded boolean that stores whether districts.txt and eligible_voters.txt have loaded successfully. I create it in main() on line 521. I insert false and false on lines 522 and 523. 
+I access the ourvector in loadDistrictsFile() on line 372 when districts.txt is loaded successfully. I also access it in loadEligibleVotersFile() on line 422 when eligible_voters.txt loaded successfully.
+I access item [0] and [1] on line 432 in load() to check if the user is double loading. I access item [0] on line 477 to check if I can start reading the second file. In readUserInput(), I use it on line 
+470 so the user can choose a state as long as the first file is loaded. I use it in line 476 to check if the user wants to make commands without reading the second file. These run every time the user makes
+a saerch(), stats(), and plot() command.
+
+*********************************************************
+ourvector<5State> stats:
+ # of vectors created:   1
+ # of elements inserted: 50
+ # of elements accessed: 3932
+*********************************************************
+This is the ourvector<State> statesList that stores the states structs. I create it in main() in line 516. I insert 50 elements to this ourvector in loadDistrictsFile() on line 366.
+The districts.txt file has the 50 states. I access elements in getState() lines 205 ane 207. I loop through the ourvector in search() on line 187 N times depending on what state we are looking for.
+I use search() in loadDistrictsFile() to check for duplicates on line 347. It iterates through the whole ourvector before pushing a new element and does this for all the districts.
+I also use search() in loadDistrictsFile() to look for valid state inputs on line 485. This iterates through the ourvector N times depending on what we are looking for/if the state exists.
+Finally, I use search() in readUserInput() on line 485, which calls search() to check if a state a user chooses is valid. This iterates N times.
+
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   32731
+ # of elements inserted: 49196
+ # of elements accessed: 48542
+*********************************************************
+The ourvector<int> are a part of State, where [0] is the Democratic votes and [1] is the Republican votes. I create States in the places I mentioned before, in main() and loadDistrictsFile().
+In loadDistrictsFile(), I create a temporary ourvector<int> on line 359 to collect the file values and push them into the ourvector<ourvector>. I also push values into it on lines 356 and 357.
+The program creates 1 for each district for each of the 50 states. I iterate through ourvector<ourvector> in wastedVotes(), where I access integer elements on line 211, 225, 226, 227, 231, 232, and 233
+to make calculations. I also access these elements in plot(), on lines 292 and 293. Each of these iterates N times, depending on how many districts a state has.
+
+*********************************************************
+ourvector<9ourvectorIiE> stats:
+ # of vectors created:   2803
+ # of elements inserted: 23298
+ # of elements accessed: 22899
+*********************************************************
+I create one ourvector<ourvector> per State, which I create in loadDistrictsFile() on line 339. Each item index represents a district and it holds 2 integers representing party votes.
+This creates 50 ourvectors, 1 per each state, with insertions matching however many districts that state has. I push districts into the ourvector on line 363. I also created a State in
+main() on line 515, which is another ourvector<ourvector>. In wastedVotes(), on line 220 I iterate through the whole ourvector N times to add up the values. I also iterate through it 
+in plot() on line 289 N times to due further calculations with the values.
