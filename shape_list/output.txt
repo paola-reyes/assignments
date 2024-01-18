@@ -1,0 +1,123 @@
+List size: 0
+Front: 0
+
+
+Adding Shape to the front
+List size: 1
+It's a Shape at x: 1, y: 3
+
+
+Adding Circle to the front
+List size: 2
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+
+
+Adding Rectangle to the back
+List size: 3
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 0, y: 0 with width: 0 and height: 10
+
+
+Adding Right Triangle to the front
+List size: 4
+It's a Right Triangle at x: 1, y: 2 with base: 3 and height: 4
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 0, y: 0 with width: 0 and height: 10
+
+
+Deleting last element
+List size: 3
+It's a Right Triangle at x: 1, y: 2 with base: 3 and height: 4
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+
+
+Deleting first element
+List size: 2
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+
+
+Finding the shape at 2, 4
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+Found location: 0
+It's a Circle at x: 2, y: 4, radius: 3
+List size: 2
+
+
+Inserting Rectangle after index 1
+Original:
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+Updated Original:
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+
+
+Removing index 0
+Original:
+It's a Circle at x: 2, y: 4, radius: 3
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+Updated Original:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+
+
+Removing index 45
+Original:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+Updated Original:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+
+
+Creating a copy of the canvas list
+Original:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+Copy:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+Original:
+Node Address: 0x56546bbccee0	Shape Address: 0x56546bbccec0
+Node Address: 0x56546bbccfa0	Shape Address: 0x56546bbccf80
+Copy:
+Node Address: 0x56546bbccf00	Shape Address: 0x56546bbccf20
+Node Address: 0x56546bbccf60	Shape Address: 0x56546bbccf40
+
+
+Clearing all elements and internal shapes
+List size: 0
+Original:
+Copy:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+
+
+Using the assignment operator to overright copy.
+List size: 1
+Original:
+It's a Shape at x: 4, y: 2
+Copy:
+It's a Shape at x: 1, y: 3
+It's a Rectangle at x: 3, y: 4 with width: 5 and height: 5
+Original:
+Node Address: 0x56546bbccfa0	Shape Address: 0x56546bbccf80
+Copy:
+Node Address: 0x56546bbccf00	Shape Address: 0x56546bbccf20
+Node Address: 0x56546bbccf60	Shape Address: 0x56546bbccf40
+Original:
+It's a Shape at x: 4, y: 2
+Copy:
+It's a Shape at x: 4, y: 2
+Original:
+Node Address: 0x56546bbccfa0	Shape Address: 0x56546bbccf80
+Copy:
+Node Address: 0x56546bbccf60	Shape Address: 0x56546bbccf40

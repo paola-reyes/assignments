@@ -1,0 +1,3 @@
+load musictester.txt
+search song ove -me +story mid
+exit

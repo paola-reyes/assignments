@@ -1,0 +1,2 @@
+  // allSolutions = NULL;
+  // allSolutionsStrings = NULL;

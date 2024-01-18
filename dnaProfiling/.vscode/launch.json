@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "theranos",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "gimme ur blood (㇏(•̀ᵥᵥ•́)ノ)",
+            "externalConsole": true,
+
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\dnaProfiling\\main.exe",
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\dnaProfiling",
+            "miDebuggerPath": "C:\\mingw\\bin\\gdb.exe"
+        }
+    ]
+}

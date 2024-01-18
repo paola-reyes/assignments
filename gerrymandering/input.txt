@@ -1,0 +1,3 @@
+load 1.txt 2.txt
+search WISCONSIN
+exit

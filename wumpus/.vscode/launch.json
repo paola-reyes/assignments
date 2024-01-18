@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "et tu wumpus",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\wumpus\\wumpus.exe",
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\wumpus",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+
+            "externalConsole": true,
+            "preLaunchTask": "press play to start"
+        }        
+    ]
+}

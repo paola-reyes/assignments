@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "wya",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\search\\main.exe",
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\search",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "preLaunchTask": "google it"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [ 
+        {
+            "name": "diet wordle",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\weaver\\main.exe",
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\weaver",
+            "externalConsole": true
+        }
+    ]
+}

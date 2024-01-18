@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "is this ur card",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\solitaire\\solitaire.exe",
+      "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\solitaire",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+
+      "preLaunchTask": "press play to start",
+    }
+  ]
+}

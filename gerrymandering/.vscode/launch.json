@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "corruption <3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\gerrymandering\\main.exe",  // change this line
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\gerrymandering",        // this one
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "preLaunchTask": "win an election <3 !!!"       // and this one
+        }
+    ]
+}
