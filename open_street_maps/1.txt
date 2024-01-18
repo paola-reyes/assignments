@@ -1,0 +1,157 @@
+Addams Hall (AH)
+Burnham Hall (BH)
+Douglas Hall (DH)
+Grant Hall (GH)
+Lecture Center A (LCA)
+Lecture Center B (LCB)
+Lecture Center C (LCC)
+Lecture Center D (LCD)
+Lecture Center E (LCE)
+Lecture Center F (LCF)
+Lincoln Hall (LH)
+Science & Engineering Offices (SEO)
+Stevenson Hall (SH)
+Taft Hall (TH)
+
+------------------------------------TEST 1------------------------------------------------
+map.osm
+DH
+Taft Hall
+#
+
+** Navigating UIC open street map **
+
+Enter map filename> 
+# of nodes: 706
+# of footways: 62
+# of buildings: 14
+# of vertices: 706
+# of edges: 342
+
+
+Enter person 1's building (partial name or abbreviation), or #> Enter person 2's building (partial name or abbreviation)> 
+Person 1's point:
+ Douglas Hall (DH)
+ (41.872821, -87.649135)
+Person 2's point:
+ Taft Hall (TH)
+ (41.871229, -87.649305)
+Destination Building:
+ Lecture Center B (LCB)
+ (41.872207, -87.649302)
+
+Nearest P1 node:
+ 1645144504
+ (41.872622, -87.649121)
+Nearest P2 node:
+ 1647971981
+ (41.871151, -87.649334)
+Nearest destination node:
+ 465776439
+ (41.872125, -87.649536)
+
+Person 1's distance to dest: 0.056118055 miles
+Path: 1645144504->1645144485->5632839976->464345467->3171093135->462010738->465776439
+
+Person 2's distance to dest: 0.15510876 miles
+Path: 1647971981->1647971934->464345433->9870872093->482767083->462010756->1647971930->462010746->462010758->464345492->462010740->462010739->462010738->465776439
+
+Enter person 1's building (partial name or abbreviation), or #> 
+
+** Done **
+
+
+---------------------------------------TEST 2-------------------------------------------
+map.osm
+LCB
+Taft Hall
+#
+
+** Navigating UIC open street map **
+
+Enter map filename> 
+# of nodes: 706
+# of footways: 62
+# of buildings: 14
+# of vertices: 706
+# of edges: 342
+
+
+Enter person 1's building (partial name or abbreviation), or #> Enter person 2's building (partial name or abbreviation)> 
+Person 1's point:
+ Lecture Center B (LCB)
+ (41.872207, -87.649302)
+Person 2's point:
+ Taft Hall (TH)
+ (41.871229, -87.649305)
+Destination Building:
+ Lecture Center E (LCE)
+ (41.871602, -87.649282)
+
+Nearest P1 node:
+ 465776439
+ (41.872125, -87.649536)
+Nearest P2 node:
+ 1647971981
+ (41.871151, -87.649334)
+Nearest destination node:
+ 465776378
+ (41.871679, -87.649522)
+
+Person 1's distance to dest: 0.13559212 miles
+Path: 465776439->462010738->462010739->462010740->464345492->462010758->462010746->464345426->465776378
+
+Person 2's distance to dest: 0.049120492 miles
+Path: 1647971981->1647971934->464345433->9862302455->1645121513->464345426->465776378
+
+Enter person 1's building (partial name or abbreviation), or #> 
+
+** Done **
+
+
+-----------------------------------------TEST 3------------------------------------------
+map_lc.osm
+LCF
+LCC
+#
+
+** Navigating UIC open street map **
+
+Enter map filename> 
+# of nodes: 181
+# of footways: 22
+# of buildings: 6
+# of vertices: 181
+# of edges: 124
+
+
+Enter person 1's building (partial name or abbreviation), or #> Enter person 2's building (partial name or abbreviation)> 
+Person 1's point:
+ Lecture Center F (LCF)
+ (41.871715, -87.649843)
+Person 2's point:
+ Lecture Center C (LCC)
+ (41.872126, -87.648704)
+Destination Building:
+ Lecture Center B (LCB)
+ (41.872207, -87.649302)
+
+Nearest P1 node:
+ 464345492
+ (41.871881, -87.650075)
+Nearest P2 node:
+ 465776801
+ (41.872126, -87.648985)
+Nearest destination node:
+ 465776439
+ (41.872125, -87.649536)
+
+Person 1's distance to dest: 0.06741315 miles
+Path: 464345492->462010740->462010739->462010738->465776439
+
+Person 2's distance to dest: 0.051865333 miles
+Path: 465776801->464345744->462010738->465776439
+
+Enter person 1's building (partial name or abbreviation), or #> 
+
+** Done **

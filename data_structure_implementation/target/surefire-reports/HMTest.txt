@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: HMTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in HMTest
+putTest  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: put() wrong value ==> expected: <10> but was: <null>
+	at HMTest.putTest(HMTest.java:33)
+
+constructorTest1  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: constructor wrong value ==> expected: <10> but was: <null>
+	at HMTest.constructorTest1(HMTest.java:12)
+
+constructorTest2  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: constructor wrong value ==> expected: <8> but was: <null>
+	at HMTest.constructorTest2(HMTest.java:21)
+
+replaceTest  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: replace() wrong value ==> expected: <7> but was: <null>
+	at HMTest.replaceTest(HMTest.java:74)
+

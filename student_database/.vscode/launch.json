@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [ 
+        {
+            "name": "academic probation",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\student_database\\main.exe",
+            "cwd": "C:\\Users\\pirey\\OneDrive\\Documents\\GitHub\\assignments\\student_database",
+            "externalConsole": true
+        }
+    ]
+}
